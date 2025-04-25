@@ -1,4 +1,4 @@
-name: Dependabot PR Auto-Merge dockerfile
+name: Dependabot PR Auto-Merge Dockerfile
 
 on:
   pull_request_target:
