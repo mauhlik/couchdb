@@ -48,7 +48,7 @@ jobs:
           uses: docker/setup-buildx-action@v2
 
         - name: Build and push latest version
-          uses: docker/build-push-action@v4
+          uses: docker/build-push-action@v6
           with:
             context: .
             file: Dockerfile
@@ -56,7 +56,7 @@ jobs:
             tags: ${{ env.REGISTRY_USERNAME }}/${{ env.COMPONENT_NAME }}:latest
 
         - name: Build and push major version
-          uses: docker/build-push-action@v4
+          uses: docker/build-push-action@v6
           with:
             context: .
             file: Dockerfile
