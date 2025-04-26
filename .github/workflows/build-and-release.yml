@@ -12,8 +12,8 @@ jobs:
       timeout-minutes: 5
       environment: default
       env:
-        REGISTRY_USERNAME: ${{ vars.REGISTRY_USERNAME }}
-        REGISTRY_TOKEN: ${{ secrets.REGISTRY_TOKEN }}
+        REGISTRY_USERNAME: ${{ vars.CONTAINER_REGISTRY_USERNAME }}
+        REGISTRY_TOKEN: ${{ secrets.CONTAINER_REGISTRY_TOKEN }}
         COMPONENT_NAME: couchdb
       steps:
         - name: Checkout code
