@@ -1,4 +1,4 @@
-FROM couchdb:3.4.3
+FROM couchdb:3.5.0
 
 RUN mv /docker-entrypoint.sh /docker-entrypoint-original.sh
 COPY docker-entrypoint.sh /docker-entrypoint.sh
