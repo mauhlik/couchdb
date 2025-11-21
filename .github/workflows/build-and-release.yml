@@ -17,7 +17,7 @@ jobs:
         COMPONENT_NAME: couchdb
       steps:
         - name: Checkout code
-          uses: actions/checkout@v5
+          uses: actions/checkout@v6
 
         - name: Dockerfile metadata
           id: dockerfile
